@@ -14,7 +14,7 @@
 
 
 .App-header {
-	background-image: linear-gradient(178deg, rgba(66,89,102,0.8), rgba(66,89,102,1), rgba(0,0,0,0.8));
+	background-image: linear-gradient(178deg,rgba(64, 67, 68,.8),rgb(91, 98, 102),rgba(0,0,0,.8));
     height: 4.5rem;
     display: flex;
     align-items: center;
@@ -23,31 +23,24 @@
     flex-wrap: wrap;
     position: fixed;
     width: 100%;
-    box-shadow: 0px 2px 0px 0px rgb(66 89 102);
+    box-shadow: 0px 1px 0px 0px rgb(91, 98, 102);
     filter: saturate(1.2) brightness(0.9) contrast(1.2);
     border-radius: 0.2rem;
     z-index: 200;
 }
 
-.myself{
-	display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-	left: 10%;
-    position: relative;
-	padding: 0rem 0.5rem;
-}
-
 .App-link, a {
 	color: white!important;
 	text-decoration:none !important;
-	padding:0rem 0.5rem;
+	margin:0rem 0.5rem;
+	padding: 1.15rem;
 }
-
+a:hover{
+	color:lightgray!important;
+}
 .main{
 	height: 100vh;
-    background-color:rgb(54, 75, 86);
+    background-color:rgb(64, 67, 68);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -66,7 +59,7 @@
 }
 
 .photo{
-	width:60%;
+	width:40%;
 	border-radius: 0.4rem;
     border: 3px double rgba(255,255,255,0.3);
     filter: br);
@@ -104,7 +97,7 @@
 	overflow:auto;
 	text-align:center;
 	position:fixed;
-	scrollbar-color: rgba(0,0,0,0.1) rgb(54, 75, 86);
+	scrollbar-color: rgba(0,0,0,0.1) rgb(64, 67, 68);
 }
 
 li{
@@ -114,32 +107,37 @@ li{
 .profile{
 	position:fixed;
 	float:right;
-	right:25%
+	right:17%
 }
 
 .screenshot{
 	width:96%;
 	border:3px double rgba(255,255,255,0.2);
-	border-radius:4px
+	border-radius:4px;
+	transition: ease-in;
 }
 
 .screenshot:hover{
-	border:none;
+	border:3px double transparent;
 	box-shadow: 1px 4px 12px 0px rgba(0,0,0,0.1);
 }
 
 .tobecontinued{
-	font-size:5rem;
+	color:rgb(255 255 255 / 50%);
 }
 
 a.active{
-	color:gray!important
+	border-bottom:5px solid rgba(255,255,255,0.7);
 }
 
 .icons{
 	height:2rem;
 	padding:0rem 1rem;
 	cursor:pointer;
+	filter: contrast(0.5);
+}
+.icons:hover{
+	filter: contrast(0.8);
 }
 
 @media only screen and (max-width: 600px){
@@ -177,7 +175,7 @@ a.active{
 .btn-check:checked + .btn-success, .btn-check:active + .btn-success, .btn-success:active, .btn-success.active, .show > .btn-success.dropdown-toggle {
     color: inherit;
     background-color: inherit;
-    border-color:white !important;
+    border-color:rgb(255 255 255 / 50%) !important;
 	box-shadow:none !important;
 }
 
@@ -187,7 +185,7 @@ a.active{
 .btn-check:focus + .btn-success, .btn-success:focus {
     color:inherit;
     background-color: inherit;
-    border-color: white!important;
+    border-color: rgb(255 255 255 / 50%)!important;
     box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 50%)!important;
 }
 

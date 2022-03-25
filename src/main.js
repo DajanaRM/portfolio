@@ -13,12 +13,12 @@ export const Main = ()=>{
 				<div className="info_container">
 					<div className="headline">
 						Welcome!
-					</div>
+					</div><br/><br/>
 					<div className="page_break">
 						Here you can find out more about me and my recent projects<br/>
 					</div>
 					<div>
-						This website, made in react.js is one of them.
+						This website is made with React.js and Bootstrap,<br/> published with npm on GitHub Pages.
 					</div>
 				</div>
 			</div>

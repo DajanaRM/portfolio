@@ -35,7 +35,7 @@ export const Projects = ()=>{
 							<img id="project_image" src={randomImage} className="screenshot" alt="" />
 						</div>
 						Web application in which after login/registration you can save all about important people (and animals) in your life<br/>
-						HTML, CSS,JS, PHP, SQL, Jquery, AJAX,... 
+						HTML, CSS, JS, PHP, MySQL, JQuery, AJAX, PHPMailer, Flickity
 					</div>
 				<div className="page_break">
 					<div className="photo_container"><img src={image5} className="screenshot" alt="" /></div>
@@ -47,9 +47,9 @@ export const Projects = ()=>{
 						<img src={image6} className="screenshot" alt="" />
 					</div>
 					Me trying to sell myself!<br/>
-					React.js
+					React.js, Bootstrap
 					</div>
-					<div className="tobecontinued">. . .
+					<div className="tobecontinued"> To be continued <br/>. . .
 					</div>
 				</div>
 			</div>
