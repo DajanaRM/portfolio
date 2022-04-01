@@ -9,11 +9,11 @@ import {HashRouter as Router, Routes, Route,useHistory, useLocation, useNavigate
 const App = ({location}) => (
 	<Router>
 		<Routes location={location}>
-            <Route path="/" element={<Main/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/projects" element={<Projects/>} />
-        </Routes>
+		    <Route path="/" element={<Main/>} />
+		    <Route path="/about" element={<About/>} />
+		    <Route path="/contact" element={<Contact/>} />
+		    <Route path="/projects" element={<Projects/>} />
+       		 </Routes>
 	</Router>
 )
 export default App;
